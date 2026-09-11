@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhishLens</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>PhishLens</h1>
+            <p>Email Phishing Analyzer</p>
+        </header>
+
+        <nav>
+            <button id="analyzeTab">Analyze Email</button>
+            <button id="historyTab">History</button>
+        </nav>
+
+        <main>
+
+            <section class="card" id="analyzeSection">
+
+                <h2>Analyze an Email</h2>
+
+                <label for="sender">Sender</label>
+                <input
+                    type="email"
+                    id="sender"
+                    placeholder="example@email.com"
+                >
+
+                <label for="subject">Subject</label>
+                <input
+                    type="text"
+                    id="subject"
+                    placeholder="Email subject"
+                >
+
+                <label for="body">Email Body</label>
+                <textarea
+                    id="body"
+                    rows="8"
+                    placeholder="Paste the email content here..."
+                ></textarea>
+
+                <button id="analyzeButton">
+                    Analyze Email
+                </button>
+
+            </section>
+
+
+            <section class="card" id="resultCard">
+
+                <h2>Analysis Result</h2>
+
+                <div id="result">
+                    <p>Your analysis result will appear here.</p>
+                </div>
+
+            </section>
+
+
+            <section class="card" id="historySection" style="display: none;">
+
+                <h2>Analysis History</h2>
+
+                <div id="history">
+                    <p>Your previous analyses will appear here.</p>
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
